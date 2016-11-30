@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1 Testing List
+  ul
+    each item, i in items
+      each jtem, j in item
+        each ktem, k in jtem
+          li
+            p #{ktem}
