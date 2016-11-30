@@ -7,6 +7,7 @@ Seeking to create a web app to display sequence alignment tables with automatic 
 To get started in this project, you need the following:
   * Node
   * MongoDB
+  
 To run this project, do the following:
   1. Clone the repo
   2. `npm i`
