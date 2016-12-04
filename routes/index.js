@@ -11,13 +11,11 @@ router.get('/helloworld', function(req, res, next) {
 });
 
 var items = {
-  "items": [
-    [
-      "A","B","C","D"
-    ],
-    [
-      "E","F","G","H"
-    ]
+  "topSequence": [
+    "A","B","C","D"
+  ],
+  "sideSequence": [
+    "E","F","G","H"
   ]
 };
 

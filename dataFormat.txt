@@ -1,0 +1,48 @@
+POST TO SERVER:
+
+
+
+{
+  "topSequence": [
+    "A","B","C","D"
+  ],
+  "sideSequence": [
+    "E","F","G","H"
+  ]
+}
+
+
+
+
+RESPONSE FROM SERVER:
+{
+	path: [
+		[10,10],
+		[10,9],
+		…
+		],
+	topSequence: [
+		"A", "B", "C", …
+		],
+	sideSequence: [
+		"X","Y","Z", …
+		],
+	nodes: [
+			{
+				xPos: 1,
+				yPos: 1,
+				northWest: 2,
+				northEast: 3,
+				southWest: -5,
+				southEast: 9
+			},
+			{
+				xPos: 1,
+				yPos: 2,
+				northWest: 4,
+				northEast: 5,
+				southWest: 73,
+				southEast: 2
+			},
+			…
+		],
