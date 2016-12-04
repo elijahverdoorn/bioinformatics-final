@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1 Testing Table
+  div
+    table
+      tbody
+        tr
+          each item in items.topSequence
+            td
+              p #{item}
+        each item in items.sideSequence
+          tr
+            td
+              p #{item}

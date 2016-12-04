@@ -25,4 +25,10 @@ router.get('/list', function(req, res, next) {
   });
 });
 
+router.get('/table', function(req, res, next) {
+  res.render('table', {
+    "items": items
+  });
+});
+
 module.exports = router;
