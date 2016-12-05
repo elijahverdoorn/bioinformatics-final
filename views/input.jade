@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1 Testing Input
+  div
+    form(id='sequenceForm', name='sequenceForm', action='/input', method='post')
+      label(for='topSequence') Sequence One
+      input(id='topSequence', type='text', value='', placeholder='AAA', name='topSequence')
+      br
+      label(for='sideSequence') Sequence Two
+      input(id='sideSequence', type='text', value='', placeholder='BBB', name='sideSequence')
+      br
+      input(id='submit', type='submit', value='Submit', name='submit')
