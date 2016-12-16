@@ -2,10 +2,10 @@ body {
   padding: 50px;
   font: 18px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
-
 a {
   color: #00B7FF;
 }
+
 
 .title{
 	color: #000000;
@@ -33,6 +33,7 @@ a {
 	
 }
 
+
 .colorRed{
 	color: #d12a27;
 }
@@ -49,4 +50,13 @@ a {
 	color: #696969;
 }
 
+
+table {
+  table-layout: fixed;
+  border: 1px solid black;
+}
+td {
+  width: 75px;
+  text-align: center;
+}
 
