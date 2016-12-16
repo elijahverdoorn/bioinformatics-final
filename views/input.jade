@@ -1,13 +1,39 @@
 extends layout
 
 block content
-  h1 Testing Input
+  h1.title Input Sequences For Alignment
   div
     form(id='sequenceForm', name='sequenceForm', action='/input', method='post')
-      label(for='topSequence') Sequence One
+      label.colorGrey Sequence One   &nbsp&nbsp
       input(id='topSequence', type='text', value='', placeholder='AAA', name='topSequence')
       br
-      label(for='sideSequence') Sequence Two
+      label.colorGrey Sequence Two   &nbsp&nbsp
       input(id='sideSequence', type='text', value='', placeholder='BBB', name='sideSequence')
       br
+      br
+
+      h2.subtitle Select Scoring Values
+      
+
+      label.colorGreen Match Score&nbsp &nbsp &nbsp   
+      input(id='matchScore', type='text', value='4', placeholder='4', name='matchScore')
+      br
+      label.colorRed Mismatch Score  
+      input(id='mismatchScore', type='text', value='-3', placeholder='-3', name='mismatchScore')
+      br
+      label.colorBlue Indel Score &nbsp &nbsp &nbsp &nbsp
+      input(id='indelScore', type='text', value='-2', placeholder='-2', name='indelScore')
+      br
+      br
+
+      label.colorGrey Use Amino Acids?      
+      input(id='useAminos', type='checkbox', name = 'agree')
+
+      br
+      br
+
       input(id='submit', type='submit', value='Submit', name='submit')
+
+
+
+
