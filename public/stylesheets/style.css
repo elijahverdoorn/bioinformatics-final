@@ -28,10 +28,25 @@ a {
 	font-size: 24px;
 	padding-top: 7px;
 	padding-bottom: 7px;
-	padding-left: 7px;
-	padding-right: 7px;
+
 	text-align: center;
 	
+}
+
+.colorRed{
+	color: #d12a27;
+}
+
+.colorBlue{
+	color: #201ea1;
+}
+
+.colorGreen{
+	color: #1ea129;
+}
+
+.colorGrey{
+	color: #696969;
 }
 
 
