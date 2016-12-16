@@ -1,6 +1,21 @@
+
 extends layout
 
 block content
+  script(type='text/javascript').
+    console.log("test");
+    var path = !{path};
+    var pos = 0;
+
+    var buttonOnClick = function() {
+      console.log(path[pos]);
+      var id = '' + path[pos].xpos + '' + path[pos].ypos;
+      console.log(id);
+      var element = document.getElementById(id);
+      element.style.backgroundColor = 'red';
+      pos++;
+    }
+
   h1 Testing Table
   div
     - var rowCount = 0
@@ -18,15 +33,18 @@ block content
               p #{sideString[rowCount]}
               - rowCount++
           td
-            table
-              tbody
-                tr
-                  td
-                    p #{node.northWest}
-                  td
-                    p #{node.northEast}
-                tr
-                  td
-                    p #{node.southWest}
-                  td
-                    p #{node.southEast}
+            div(id='' + node.xpos + '' + node.ypos)
+              table
+                tbody
+                  tr
+                    td
+                      p #{node.northWest}
+                    td
+                      p #{node.northEast}
+                  tr
+                    td
+                      p #{node.southWest}
+                    td
+                      p #{node.southEast}
+  div
+    button(onclick='buttonOnClick()') Route
