@@ -1,8 +1,37 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 18px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
 }
+
+.title{
+	color: #000000;
+	font-size: 36px;
+	font-family: bold;
+}
+
+.subtitle{
+	color: #000000;
+	font-size: 22px;
+}
+.intro{
+	color: #696969;
+	font-size: 18px;
+}
+
+.forwardButton{
+	margin-top: 50px;
+	outline-style: dotted;
+	font-size: 24px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	padding-left: 7px;
+	padding-right: 7px;
+	text-align: center;
+	
+}
+
+

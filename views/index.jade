@@ -1,5 +1,17 @@
 extends layout
 
+
 block content
-  h1= title
-  p Welcome to #{title}
+  h1.title= title
+
+  div.subtitle
+    p Welcome to NW Online!
+
+  div.intro
+    p.A  > Bioinformatics final project developed by David Ellenberger and Elijah Verdoorn. 
+    &nbsp> Needleman-Wunsch Online is a tool designed to walk through the otherwise traumatic steps of the NW algorithm, a powerhouse in dynamic sequence alignment. Needleman Wunsch is a method for aligning two sequences of Nucleotides or amino Acids by finding and concurrently scoring a grid of boxes in four quadrants, then evaluating the total scoring of each box to determine a physical alignment. This tool provides a walk through of the computations involved behind the scenes, and alleviates the pain of performing the algorithm by hand.
+
+
+  div.forwardButton
+    #[a(href="/input") Begin Alignment]
+
