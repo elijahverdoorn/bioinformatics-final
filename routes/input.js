@@ -9,10 +9,14 @@ router.get('/', function(req, res, next) {
 });
 
 router.post('/', function(req, res){
-  var topString = req.topSequence;
-  var sideString = req.sideSequence;
-  calculate(topString, sideString);
-  res.send('success');
+  var topString = req.body.topSequence;
+  var sideString = req.body.sideSequence;
+  var topStringArr = JSON.parse(calculate.parseString(req.body.topSequence));
+  var sideStringArr = JSON.parse(calculate.parseString(req.body.sideSequence));
+  console.log(topString);
+  var json = calculate.calculate(topString, sideString);
+  //console.log(json);
+  res.render('table', {'nodesArr': json.nodeArr, 'topString': topStringArr, 'sideString': sideStringArr});
 });
 
 module.exports = router;

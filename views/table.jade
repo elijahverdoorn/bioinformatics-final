@@ -3,13 +3,30 @@ extends layout
 block content
   h1 Testing Table
   div
+    - var rowCount = 0
     table
       tbody
         tr
-          each item in items.topSequence
+          td
+          each item in topString
             td
               p #{item}
-        each item in items.sideSequence
-          tr
-            td
-              p #{item}
+        each node in nodesArr
+          if node.xpos == 0
+            tr
+            td.label
+              p #{sideString[rowCount]}
+              - rowCount++
+          td
+            table
+              tbody
+                tr
+                  td
+                    p #{node.northWest}
+                  td
+                    p #{node.northEast}
+                tr
+                  td
+                    p #{node.southWest}
+                  td
+                    p #{node.southEast}
